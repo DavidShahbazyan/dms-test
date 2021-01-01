@@ -1,0 +1,43 @@
+### private Long id;
+### private String firstName;
+### private String secondName;
+### private String lastName;
+### private LocalDateTime birthDate;
+### private Gender gender;
+### private String passportNumber;
+### private String ssn;
+### private String phoneNumber;
+### private String registrationAddress;
+### private String residentialAddress;
+
+###
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{}
+
+###
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "firstName": "firstName",
+  "secondName": "secondName",
+  "lastName": "lastName",
+  "birthDate": "2020-12-11T06:48:16",
+  "gender": "MALE",
+  "passportNumber": "passportNumber",
+  "ssn": "ssn",
+  "phoneNumber": "phoneNumber",
+  "registrationAddress": "registrationAddress",
+  "residentialAddress": "residentialAddress"
+}
+###
+GET http://localhost:8080/employees
+Content-Type: application/json
+
+###
+GET http://localhost:8080/employees/5
+Content-Type: application/json
+
+###
